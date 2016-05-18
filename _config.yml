@@ -1,0 +1,21 @@
+# Site settings
+title: A Blog for New Programmers
+header-img: img/home-bg.png
+email: wgingher@gmail.com
+copyright_name: bging4
+description: > # this means to ignore newlines until "baseurl:"
+  Thoughts on Learning to Program
+baseurl: "" # the subpath of your site, e.g. /blog
+twitter_username: 
+github_username:  bging4
+learn_profile: bging4
+email_username: wgingher@gmail.com
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+
+gems: [jekyll-paginate, jekyll-feed]
