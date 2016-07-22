@@ -77,15 +77,14 @@ Now we'll create three instances of the Archer class, and the output will show u
 robin = Archer.new("Robin")
 sheriff_of_rottingham = Archer.new("Sheriff of Rottingham")
 litte_john = Archer.new("Little John—though in real life, he's actually very big")
-
+```
+```
 robin.fire
 He split the sheriff's arrow in twain!
 #<Archer:0x007fbe79a11fa0>
-
 sheriff_of_rottingham.fire
 He split Robin's arrow in twain!
 #<Archer:0x007fcc43874b70>
-
 little_john.fire
 You're not part of this competition!
  => nil
