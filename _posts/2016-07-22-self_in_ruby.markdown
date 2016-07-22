@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Self in Ruby"
-date:   2016-07-22 16:32:41 +0000
+date:   2016-07-22 12:32:41 -0400
 ---
 
 In Ruby, the concept of self seems tricky at first. But in principle it is quite simple—though applying the principle to different contexts can be difficult. Basically, a method must be called on an object (or a class object). So, you can't just do the following: 
@@ -13,8 +13,7 @@ The object_id method must be called on something. If nothing is specified, by de
 2. If you are inside a module definition, self is that module. 
 3. If you are inside a method definition, self will be the object that calls that method. 
 
-Rule 3 is a bit trickier, since it depends on the kind of method and on the object that eventually calls it. 
-3.a. If it is a class method, self will be the class object that calls that method. 
+Rule 3 is a bit trickier, since it depends on the kind of method and on the object that eventually calls it. If it is a class method, self will be the class object that calls that method. 
 
 ```
 class Archer
@@ -32,7 +31,7 @@ self: Archer
  => nil
 ```
   
-3.b. Here is an example of self in an instance method (credits to "Robin Hood: Men in Tights" for the example, and for its general greatness):
+Here is an example of self in an instance method (credits to "Robin Hood: Men in Tights" for the example, and for its general greatness):
 
 ```
 class Archer
@@ -82,7 +81,6 @@ litte_john = Archer.new("Little John—though in real life, he's actually very b
 robin.fire
 He split the sheriff's arrow in twain!
 #<Archer:0x007fbe79a11fa0>
-
 
 sheriff_of_rottingham.fire
 He split Robin's arrow in twain!
