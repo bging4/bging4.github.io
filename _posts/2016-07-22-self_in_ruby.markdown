@@ -88,6 +88,7 @@ sheriff_of_rottingham.fire
 He split Robin's arrow in twain!
 #<Archer:0x007fcc43874b70>
 ```
+
 ```
 little_john.fire
 You're not part of this competition!
