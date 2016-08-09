@@ -25,6 +25,7 @@ end
 ```
 
 `Archer.fire` will return:
+
 ```
 Firing now
 self: Archer
@@ -49,7 +50,7 @@ sheriff_of_rottingham.fire
 #<Archer:0x007fcc43874b70>
 ```
 
-Now when let's create two archers and make the code conditional. Then we'll clearly see who self is when we call #fire.
+Now let's create two archers and make the code conditional. Then we'll clearly see who self is when we call #fire.
 
 ```
 class Archer
@@ -95,7 +96,7 @@ You're not part of this competition!
  => nil
  ```
   
-So, when you're writing an instance method, you don't know exactly who self will be until an object calls it. But if you're writing the method within a class, you know it will be an instance of that class. 
+So, the bottom line is that when you're writing an instance method, you don't know exactly who self will be until an object calls the method. But if you're writing the method within a class, you know it will be an instance of that class. 
 
 
 
